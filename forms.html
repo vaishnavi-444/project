@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <h1>Signup</h1>
+    <style>
+.item:hover{
+    background-color:lightskyblue;
+}
+h1{
+    text-align: center;
+    padding: 20px;
+}
+.back{
+    background-color:rgb(218, 225, 231);
+    width: 300px;
+    padding: 54px;
+    margin-left: auto;
+    margin-right: auto;
+}
+html{
+    background:linear-gradient(90deg,#cb83e0,#6552ac);
+}
+.check{
+    width: 14px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.item{
+    width: 100%;
+}
+    </style>
+    <form class="back" method="POST">
+        <p>Full name :</p>
+        <input class="item" type="text" name="username" placeholder="Enter your name" autofocus required>
+        <p>Email :</p>
+        <input class="item" type="email" name="email" placeholder="enter valid email" required>
+        <p>Age :</p>
+        <input class="item" type="number" min="10" max="50" required placeholder="above 10yrs only">
+        <p>Password :</p>
+        <input class="item" type="password" name="password" placeholder="create password" minlength="1" maxlength="12" required>
+        <p>Confirm Password :</p>
+        <input class="item" type="confirm password" name="confirm password" placeholder="confirm password" minlength="1" maxlength="12" required>
+        <p>Gender :</p>
+        <input type="radio" name="Male" value="Male">Male</input>
+        <input type="radio" name="Female">Female</input>
+        <input type="radio" name="Others">Others</input>
+        <p>Security Question :</p></br>
+        <select name="Security-question" required>
+            <option value="What is your pet name ">What is your pet name ?</option>
+            <option value="What is your first job">What is your first job ?</option>
+            <option value="What is your favourite food">What is your favourite food ?</option>
+            <option value="What is your favourite colour">What is your favourite colour ?</option>
+            </select></br>
+            <textarea name="answer" rows="10" cols="40" required placeholder="enter the security answer"></textarea></br>
+            <input class="check" type="checkbox" name="terms" required>I agree to accept terms and conditions</input></br>
+            <input type="submit" name="submit"></input></br>
+    </form>
+</html>
